@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+function add() 
+            
+            {
+                var data1=parseInt(document.getElementById("userInput1").value);
+                var data2=parseInt(document.getElementById("userInput2").value);
+                var sum=data1+data2;
+                
+                document.getElementById("data").innerHTML=sum;
+           
+            }
+
+function sub() 
+            
+            {
+                var data1=parseInt(document.getElementById("userInput1").value);
+                var data2=parseInt(document.getElementById("userInput2").value);
+                var sub=data1-data2;
+                
+                document.getElementById("data").innerHTML=sub;
+           
+            }
+
+function mul() 
+            
+            {
+                var data1=parseInt(document.getElementById("userInput1").value);
+                var data2=parseInt(document.getElementById("userInput2").value);
+                var mul=data1*data2;
+                
+                document.getElementById("data").innerHTML=mul;
+           
+            }
+
+function div() 
+            
+            {
+                var data1=parseInt(document.getElementById("userInput1").value);
+                var data2=parseInt(document.getElementById("userInput2").value);
+                var div=data1/data2;
+                
+                document.getElementById("data").innerHTML=div;
+           
+            }
+function rem() 
+            
+            {
+                var data1=parseInt(document.getElementById("userInput1").value);
+                var data2=parseInt(document.getElementById("userInput2").value);
+                var rem=data1%data2;
+                
+                document.getElementById("data").innerHTML=rem;
+           
+            }
+
+  </script>
+
+                <form>
+                <Input type="text" id="userInput1" name="userInput1" placeholder="First Value"/>
+                <Input type="text" id="userInput2" name="userInput2" placeholder="Second Value"/>
+                
+                <br>
+                <br>
+                <button type="button" onClick="add()">Addition</button>
+                <br>
+                <br>
+                <button type="button" onClick="sub()">Subtraction</button>
+                <br>
+                <br>
+                <button type="button" onClick="mul()">Multiplication</button>
+                <br>
+                <br>
+                <button type="button" onClick="div()">Division</button>
+                <br>
+                <br>
+                <button type="button" onClick="rem()">Remainder</button>
+                <p id="data"></p>
+
+                </form>
+
+</body>
+</html>

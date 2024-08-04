@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    Enter Nmae : <Input type="text" id="userInput" name="userInput"/> 
+                 <Input type="button" value="Get Square" onclick="getsquare()"/>
+                 <Input type="button" value="Get cube" onclick="getcube()"/>
+                 <Input type="button" value="Get clear" onclick="clr()"/>
+
+
+        <script>
+
+
+
+            function getsquare() 
+            
+            {
+                var data = document.getElementById("userInput").value;
+                alert(data * data);
+
+            }
+
+
+             function getcube() 
+            
+            {
+                var data = document.getElementById("userInput").value;
+                alert(data * data * data);
+
+            }
+
+            function clr() 
+            
+            {
+                var data = document.getElementById("userInput").value="";
+                
+             }
+
+
+        </script>
+   
+
+</body>
+</html>

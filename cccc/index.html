@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1>Item Details</h1>
+    <form id="itemForm">
+      <div class="form-row">
+        <div class="col">
+          <input type="number" class="form-control" placeholder="Serial Number" id="serialNumber">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Item Description" id="itemDescription">
+        </div>
+        <div class="col">
+          <input type="number" class="form-control" placeholder="Price" id="price">
+        </div>
+        <div class="col">
+          <input type="number" class="form-control" placeholder="Quantity" id="quantity">
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-primary">Add Item</button>
+        </div>
+      </div>
+    </form>
+
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th>Serial Number</th>
+          <th>Item Description</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="itemTableBody">
+        <!-- Table rows will be added dynamically using JavaScript -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" style="text-align: right;"><strong>Total Price:</strong></td>
+          <td id="totalPriceColumn">0</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
